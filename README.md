@@ -1,67 +1,59 @@
 # Terra — Real Estate Intelligence
 
-> NYC distress pipeline, ownership entity graph, and AI-assisted deal workflow — governed real estate intelligence for acquisition teams and fund operators.
+  > NYC distress pipeline and AI-assisted real-estate deal workflow — sourcing, underwriting, comps, and decision artifacts in one governed surface.
 
-[![CI](https://github.com/szl-holdings/szl-holdings-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/szl-holdings/szl-holdings-platform/actions/workflows/ci.yml)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/license-Proprietary-red?style=flat-square)](../../LICENSE.md)
+  [![CI](https://github.com/szl-holdings/szl-holdings-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/szl-holdings/szl-holdings-platform/actions/workflows/ci.yml)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![License](https://img.shields.io/badge/license-Proprietary-red?style=flat-square)](../../LICENSE.md)
 
-[Live Demo](https://szlholdings.com) · [Platform Demo Video](https://szlholdings.com/szl-demo-video/) · [Investor Dashboard](https://szlholdings.com/stephen/investor) · [Architecture](../../docs/architecture/architecture.md) · [Platform Thesis](../../docs/investor/platform-thesis.md)
+  [Live Demo](https://szlholdings.com) · [Platform Demo Video](https://szlholdings.com/szl-demo-video/) · [Investor Dashboard](https://szlholdings.com/stephen/investor) · [Architecture](../../docs/architecture/architecture.md)
 
-![Terra Real Estate Intelligence](../../.github/assets/screenshots/terra-hero.jpg)
+  ![Terra — Real Estate Intelligence](../../.github/assets/screenshots/terra-hero.jpg)
 
----
+  ---
+  ## What it does
 
-## What it does
+  Terra is the **NYC distress pipeline + AI-assisted real-estate deal workflow** — sourcing, underwriting, comps, predictive cap-rate modeling, and full decision artifacts in one governed surface. Built on the same Ouroboros runtime + Codex decision-receipt kernel as the rest of the platform.
 
-Terra is the real estate intelligence domain pack for the SZL Holdings platform. It monitors New York City public records for distress signals, maps ownership entity relationships, runs AI-assisted lead scoring, and tracks deal pipelines — all under the same governance infrastructure that powers every SZL Holdings product.
+  ## Government alignment
 
-Live data: NYC Open Data distress pipeline, Census ACS, BLS, FEMA, SEC EDGAR. Note: maps are blank without a Mapbox token configured.
+  Terra inherits the platform's NYSTEC-audited governance posture and is uniquely positioned for NY State property/asset workflows:
 
-## Run locally
+  - **NIST AI RMF**: full coverage across GOVERN / MAP / MEASURE / MANAGE
+  - **GSA RAG source attribution**: every cited record hashed via Katzilla primary-source feed
+  - **Predictive cap-rate model**: ML-driven forecasting with uncertainty bands surfaced per step
+  - **Amaru reconciliation**: property and asset records merged across agency systems with consistency gates
 
-```bash
-# From the monorepo root
-pnpm install
-pnpm --filter @workspace/api-server dev   # Start the API server first
-pnpm --filter @workspace/terra dev
-```
+  ## Run locally
 
-**Primary route:** `/terra/`
+  ```bash
+  pnpm install
+  pnpm --filter @workspace/api-server dev
+  pnpm --filter @workspace/terra dev
+  ```
 
-> **Maps:** Add `MAPBOX_TOKEN` to your environment secrets to enable map views. The free Mapbox tier covers all demo use cases.
+  **Primary route:** `/terra/`
 
-## Key modules
+  ## Tech stack
 
-| Module | Route | Purpose |
-|--------|-------|---------|
-| Distress Pipeline | `/terra/` | NYC distress signal monitoring and lead scoring |
-| Ownership Graph | `/terra/ownership` | Entity relationship mapping for properties |
-| Deal Pipeline | `/terra/deals` | Active deal tracking with AI-assisted underwriting |
-| Market Intelligence | `/terra/market` | NYC market signals from live public data |
+  React 19 + Vite 7 + TypeScript (strict) · Express 5 · PostgreSQL 16 / Drizzle ORM · Mapbox GL · Predictive cap-rate ML model · Ouroboros loop runtime (`PRF_SYSTEM_CLAIMS`) · Codex decision receipts
+  
+  ---
 
-## Tech stack
+  **SZL Holdings** · [szlholdings.com](https://szlholdings.com) · [inquiries@szlholdings.com](mailto:inquiries@szlholdings.com)
 
-React 19 + Vite 7 + TypeScript (strict) · Mapbox GL JS · Express 5 (shared API server) · PostgreSQL 16 / Drizzle ORM · NYC Open Data / Census ACS / BLS (live) · OIDC/PKCE auth · Proof Chain audit trail
+  ---
+  ## About this repository
 
-## Architecture reference
+  This is a public showcase of one product in the [SZL Holdings platform](https://github.com/szl-holdings/szl-holdings-platform) monorepo. It mirrors the README from the platform artifact directory; the canonical, version-controlled source — including the React app, tests, and infrastructure — lives in the platform repo.
 
-Full system architecture: [`docs/architecture/architecture.md`](../../docs/architecture/architecture.md)
+  All seven products share the same governed substrate:
 
----
+  - **[`@workspace/ouroboros`](https://github.com/szl-holdings/ouroboros)** — bounded loops with measurable convergence, v6 ecosystem layer, government readiness module (**133/133 tests**)
+  - **[`@workspace/codex-kernel`](https://github.com/szl-holdings/szl-holdings-platform/tree/master/packages/codex-kernel)** — decision receipts, validators, replay, trace-hash verification
+  - **The Ouroboros Thesis** — [`szl-holdings/ouroboros-thesis`](https://github.com/szl-holdings/ouroboros-thesis) — architectural rationale + v6 operational contract
 
-**SZL Holdings** · [szlholdings.com](https://szlholdings.com) · [inquiries@szlholdings.com](mailto:inquiries@szlholdings.com)
+  Government readiness audit (NYSTEC pre-briefing, 2026-04-30): [`docs/audit/szl-government-readiness.md`](https://github.com/szl-holdings/ouroboros/blob/main/docs/audit/szl-government-readiness.md)
 
-
----
-## About this repository
-
-This is a public showcase of one product in the [SZL Holdings platform](https://github.com/szl-holdings/szl-holdings-platform) monorepo. It mirrors the README from the platform artifact directory; the canonical, version-controlled source — including the React app, tests, and infrastructure — lives in the platform repo.
-
-All seven products share the same operational substrate:
-
-- **[`@workspace/ouroboros`](https://github.com/szl-holdings/ouroboros)** — bounded loops with measurable convergence; proof-route resolver, risk-tier escalation gate, and almanac cycle advancer.
-- **[`@workspace/codex-kernel`](https://github.com/szl-holdings/szl-holdings-platform/tree/main/packages/codex-kernel)** — decision receipts, validators, replay, and trace-hash verification.
-- **The Ouroboros Thesis v2** — [`szl-holdings/ouroboros-thesis`](https://github.com/szl-holdings/ouroboros-thesis) — the architectural rationale.
-
-© 2026 SZL Holdings. All rights reserved.
+  © 2026 SZL Holdings. All rights reserved.
+  
