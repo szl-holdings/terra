@@ -8,7 +8,7 @@
 
   [Live Demo](https://szlholdings.com) · [Platform Demo Video](https://szlholdings.com/szl-demo-video/) · [Investor Dashboard](https://szlholdings.com/stephen/investor) · [Architecture](../../docs/architecture/architecture.md)
 
-  ![Terra — Real Estate Intelligence](../../.github/assets/screenshots/terra-hero.jpg)
+  ![Terra — Real Estate Intelligence](https://raw.githubusercontent.com/szl-holdings/.github/main/assets/screenshots/terra-fresh.jpg)
 
   ---
   ## What it does
