@@ -1,6 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the SZL Holdings research thesis (Ouroboros Thesis v13) and reference this component."
 title: "terra — Real estate intelligence. Deal pipeline scoring, portfolio analytics, market signals, and AI-assisted underwriting."
+version: "0.1.0"
+date-released: "2026-05-29"
 abstract: >-
   Real estate intelligence. Deal pipeline scoring, portfolio analytics, market signals, and AI-assisted underwriting. Component of the SZL Holdings governed AI decision infrastructure,
   built on the Ouroboros Thesis (DOI 10.5281/zenodo.19944926).
