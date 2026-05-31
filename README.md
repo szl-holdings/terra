@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-Proprietary-28251D?style=flat-square)](./LICENSE)
 [![Series-A Engineering](https://img.shields.io/badge/Series--A-Engineering-28251D?style=flat-square)](https://github.com/szl-holdings)
-[![Doctrine v6](https://img.shields.io/badge/Doctrine-v6-01696F?style=flat-square)](https://github.com/szl-holdings/platform/blob/main/docs/doctrine/szl-doctrine.md)
+[![Doctrine v7](https://img.shields.io/badge/Doctrine-v7-7c5cff?style=flat-square)](https://github.com/szl-holdings/.github/blob/main/doctrine/DOCTRINE_V7.md)
 [![Security Policy](https://img.shields.io/badge/security-policy-1B474D?style=flat-square)](./SECURITY.md)
 
 Real estate intelligence platform — AI-assisted deal-pipeline scoring, portfolio analytics, and underwriting workflows with governed decision trails.
