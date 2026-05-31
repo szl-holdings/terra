@@ -13,7 +13,7 @@ authors:
     name-suffix: "Jr."
 
     email: stephen@szlholdings.com
-    affiliation: SZL Holdings
+    affiliation: "SZL Holdings, Inc."
     orcid: "https://orcid.org/0009-0001-0110-4173"
 license: LicenseRef-SZL-Proprietary
 url: "https://github.com/szl-holdings/terra"
@@ -42,7 +42,7 @@ preferred-citation:
       name-suffix: "Jr."
 
       email: stephen@szlholdings.com
-      affiliation: SZL Holdings
+      affiliation: "SZL Holdings, Inc."
       orcid: "https://orcid.org/0009-0001-0110-4173"
   year: 2026
   url: "https://github.com/szl-holdings/terra"
