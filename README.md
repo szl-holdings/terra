@@ -1,8 +1,16 @@
 # terra
 
+<!-- series-a-badges (Doctrine v11) -->
+[![CI](https://github.com/szl-holdings/terra/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/szl-holdings/terra/actions/workflows/ci.yml)  
+[![CodeQL](https://github.com/szl-holdings/terra/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/szl-holdings/terra/actions/workflows/codeql.yml)  
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/szl-holdings/terra/badge)](https://securityscorecards.dev/viewer/?uri=github.com/szl-holdings/terra)  
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-025E8C?style=flat-square&logo=dependabot&logoColor=white)](https://github.com/szl-holdings/terra/security/dependabot)  
+[![SLSA](https://img.shields.io/badge/SLSA-L1_honest-eab308?style=flat-square)](https://slsa.dev/spec/v1.0/levels)
+
+
 [![License](https://img.shields.io/badge/license-Proprietary-28251D?style=flat-square)](./LICENSE)
 [![Series-A Engineering](https://img.shields.io/badge/Series--A-Engineering-28251D?style=flat-square)](https://github.com/szl-holdings)
-[![Doctrine v7](https://img.shields.io/badge/Doctrine-v7-7c5cff?style=flat-square)](https://github.com/szl-holdings/.github/blob/main/doctrine/DOCTRINE_V7.md)
+[![Doctrine v11](https://img.shields.io/badge/Doctrine-v11-3b82f6?style=flat-square)](https://github.com/szl-holdings/.github/blob/main/doctrine/DOCTRINE_V11.md)
 [![Security Policy](https://img.shields.io/badge/security-policy-1B474D?style=flat-square)](./SECURITY.md)
 
 Real estate intelligence platform — AI-assisted deal-pipeline scoring, portfolio analytics, and underwriting workflows with governed decision trails.
